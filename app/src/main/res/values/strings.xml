@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Indian Kullad</string>
+
+    <string name="login_with">Login/SignUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="name">Name</string>
+    <string name="contact">Mobile Number</string>
+</resources>
