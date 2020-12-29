@@ -9,4 +9,7 @@
     <string name="signup">SignUp</string>
     <string name="name">Name</string>
     <string name="contact">Mobile Number</string>
+    <string name="kullad_name">Kullad Name</string>
+    <string name="price">Price</string>
+
 </resources>

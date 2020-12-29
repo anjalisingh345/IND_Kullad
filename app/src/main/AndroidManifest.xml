@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IndianKullad">
-        <activity android:name=".Item_Info"></activity>
+        <activity android:name=".Item_infoo"></activity>
+        <activity android:name=".Item_Info" />
         <activity android:name=".Register" />
         <activity android:name=".Product_Adapter" />
         <activity android:name=".Login">

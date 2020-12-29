@@ -35,7 +35,11 @@ public class Product_Adapter extends RecyclerView.Adapter<Product_Adapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-       // holder.price.setText(mdata.get(position));
+       holder.price.setText(""+mdata.get(position).getPrice());
+       holder.des.setText(""+mdata.get(position).getDescription());
+       holder.k_code.setText(""+mdata.get(position).getKullad_code());
+       holder.k_name.setText(""+mdata.get(position).getKullad_name());
+       //holder.img.setImageResource(""+mdata.get(position).getImage());
 
     }
 
