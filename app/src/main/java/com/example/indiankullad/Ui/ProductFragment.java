@@ -30,6 +30,8 @@ public  class ProductFragment extends Fragment {
         rc = view.findViewById(R.id.recycler);
         rc.setHasFixedSize(true);
         rc.setLayoutManager(new LinearLayoutManager(getContext()));
+        Product_Adapter adapter = new Product_Adapter(getContext(),mdata);
+        rc.setAdapter(adapter);
 
         Product_Adapter adapter =new Product_Adapter(getContext(),mdata);
         rc.setAdapter(adapter);

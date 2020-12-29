@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.indiankullad.Ui.ProductFragment;
+
 public class Login extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void signup(View view) {
-        Intent intent = new Intent(Login.this,Product_Adapter.class);
+        Intent intent = new Intent(Login.this, MainActivity.class);
         startActivity(intent);
     }
 
