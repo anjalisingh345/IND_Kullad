@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ImageView
@@ -74,5 +75,20 @@
         android:textSize="20dp"
         android:layout_marginTop="@dimen/margin_10dp"
         android:textColor="@color/teal_700" />
+
+    <me.himanshusoni.quantityview.QuantityView
+        android:id="@+id/quantityView_custom_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:qv_addButtonText="ADD MORE"
+        app:qv_addButtonTextColor="@color/teal_700"
+        app:qv_maxQuantity="20"
+        app:qv_minQuantity="2"
+        app:qv_quantity="15"
+        app:qv_quantityDialog="false"
+        app:qv_removeButtonText="REMOVE"
+        app:qv_removeButtonTextColor="@color/sienna" />
+
 
 </LinearLayout>

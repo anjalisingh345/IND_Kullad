@@ -16,21 +16,22 @@ import java.util.List;
 
 public class Product_Adapter extends RecyclerView.Adapter<Product_Adapter.ViewHolder>{
 
-    private Context mcontext;
-    private List<Model> mdata;
-   // private boolean ischat;
+    View view;
+    Context context;
+    List<Model> mdata;
 
-    public Product_Adapter(Context mcontext,List<Model> mdata){
+    public Product_Adapter(Context context, List<Model> mdata) {
+        this.context = context;
         this.mdata = mdata;
-        this.mcontext = mcontext;
-       // this.ischat = ischat;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mcontext).inflate(R.layout.activity_product__adapter,parent,false);
-        return new Product_Adapter.ViewHolder(view);
+        view= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_product__adapter,parent,false);
+        ViewHolder viewHolder  = new ViewHolder(view);
+
+        return viewHolder;
     }
 
     @Override
