@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:text="Quantity"
         android:id="@+id/quantity"
+        android:onClick="quantity"
         android:layout_marginHorizontal="10dp"
         android:textSize="20dp"
         android:layout_marginTop="@dimen/margin_10dp"
