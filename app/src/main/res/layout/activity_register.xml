@@ -94,11 +94,11 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edtEmail"
+                        android:id="@+id/edtmobile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawablePadding="5dp"
-                        android:hint="@string/email"
+                        android:hint="@string/contact"
                         android:textSize="16dp"
                         android:fontFamily="sans-serif"
                         android:inputType="textEmailAddress"
@@ -106,6 +106,24 @@
 
                         />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputaddres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/address"
+                        android:fontFamily="sans-serif"
+                        android:inputType="text"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/inputPass"
@@ -168,6 +186,7 @@
                         android:padding="7dp"
                         android:id="@+id/signupbutton"
                         android:text="@string/signup"
+                        android:onClick="signup"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="@dimen/mid_text"

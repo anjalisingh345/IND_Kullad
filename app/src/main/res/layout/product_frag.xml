@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:src="@drawable/kullad2"
-        android:layout_marginHorizontal="4dp"
-        android:scaleType="fitXY"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_margin="@dimen/margin_10dp"-->
+<!--            android:id="@+id/bannerviewpager" />-->
+
+
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tab_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            app:tabBackground="@drawable/tab_selector"-->
+<!--            app:tabGravity="center"-->
+<!--            app:tabIndicatorHeight="0dp"-->
+<!--            android:layout_height="@dimen/margin_10dp"/>-->
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="@dimen/margin_10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="5dp"
         android:id="@+id/recycler"></androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+    </LinearLayout>

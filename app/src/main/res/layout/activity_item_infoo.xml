@@ -5,38 +5,101 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?colorPrimary"-->
+<!--        android:elevation="4dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+<!-- -->
+
+
+    <!--    <com.wajahatkarim3.easyflipview.EasyFlipView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:flipOnTouch="true"-->
+<!--        app:flipEnabled="true"-->
+<!--        app:flipDuration="400"-->
+<!--        app:flipType="vertical"-->
+<!--        app:flipFrom="front"-->
+<!--        app:autoFlipBack="true"-->
+<!--        android:id="@+id/easyflip"-->
+<!--        app:autoFlipBackTime="1000"-->
+<!--        />-->
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
         android:id="@+id/image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
         android:scaleType="fitXY"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logo" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginHorizontal="80dp"
+        android:layout_marginHorizontal="15dp"
         android:weightSum="6">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kullad_name"
             android:id="@+id/kname"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center"
             android:textColor="@color/sienna"
-            android:layout_weight="2"
-            android:textSize="30dp"/>
+            android:layout_weight="1"
+            android:textSize="24dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(3)"
             android:textColor="@color/sienna"
-            android:layout_weight="2"
-            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
             android:id="@+id/kcode"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pin"
+        android:id="@+id/view2"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:weightSum="6">
+        <TextView
+            android:id="@+id/box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Box Capacity ="
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/box_capa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18dp"></TextView>
 
     </LinearLayout>
 
@@ -44,17 +107,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginHorizontal="80dp"
-        android:weightSum="8">
+       android:gravity="center"
+        android:weightSum="6">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/price"
+            android:text="Price  ="
             android:id="@+id/price"
-            android:layout_weight="2"
-            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
             android:textColor="@color/sienna" />
 
         <TextView
@@ -62,34 +125,165 @@
             android:layout_height="wrap_content"
             android:text="2 Rs."
             android:id="@+id/price2"
+            android:layout_marginHorizontal="5dp"
             android:layout_weight="2"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textColor="@color/sienna" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pin"
+        android:id="@+id/view"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:id="@+id/edit_profile"
+        android:layout_gravity="right"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="20dp"
+        app:tint="@color/sienna" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:weightSum="6">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_person_24"
+        app:tint="@color/purple_200" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anjali"
+            android:id="@+id/name2"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="@color/purple_200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginLeft="25dp"
+        android:weightSum="6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            app:tint="@color/purple_200" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lalghati"
+            android:id="@+id/address2"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="18dp"
+            android:textColor="@color/purple_200" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginLeft="25dp"
+        android:weightSum="6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contact"
+            app:tint="@color/purple_200" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="987689867"
+            android:id="@+id/contact1"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="@color/purple_200" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pin"
+        android:id="@+id/view3"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:weightSum="6">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quantity"
         android:id="@+id/quantity"
-        android:onClick="quantity"
+        android:layout_weight="1"
         android:layout_marginHorizontal="10dp"
         android:textSize="20dp"
         android:layout_marginTop="@dimen/margin_10dp"
         android:textColor="@color/teal_700" />
-
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="ORDER"
+        android:textColor="@color/green"
+        android:textSize="20dp"></TextView>
+    </LinearLayout>
     <me.himanshusoni.quantityview.QuantityView
         android:id="@+id/quantityView_custom_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         app:qv_addButtonText="ADD MORE"
         app:qv_addButtonTextColor="@color/teal_700"
         app:qv_maxQuantity="20"
-        app:qv_minQuantity="2"
-        app:qv_quantity="15"
+        app:qv_minQuantity="1"
+        app:qv_quantity="1"
+        android:layout_marginHorizontal="25dp"
         app:qv_quantityDialog="false"
         app:qv_removeButtonText="REMOVE"
         app:qv_removeButtonTextColor="@color/sienna" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/fragment2"-->
+<!--        android:name="example.javatpoint.com.fragmentexample.Fragment2"-->
+<!--        android:layout_width="0px"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        />-->
 
 
 </LinearLayout>

@@ -33,15 +33,40 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    ///volley library
+    implementation 'com.android.volley:volley:1.1.0'
 
     //quantity
 
     implementation 'me.himanshusoni.quantityview:quantity-view:1.2.0'
 
+    //picaso
+
+    //implementation 'com.squareup.picasso:picasso:2.5.0'
+
+    //implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //implementation('com.squareup.picasso:picasso:3.0.0-SNAPSHOT') {
+      //  exclude group: 'com.android.support'
+    //}
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //spinkit
+
+    implementation 'com.karumi:dexter:5.0.0'
+
     //volley library
 
     implementation 'com.android.volley:volley:1.1.0'
+
+   // implementation 'com.android.support:appcompat-v7:25.1.0'
+    //    compile 'me.himanshusoni.quantityview:quantity-view:1.2.0'
+//    implementation project(':quantity-view')
+    implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:3.0.0'
 }

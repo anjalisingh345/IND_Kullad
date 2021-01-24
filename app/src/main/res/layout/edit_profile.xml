@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custome_address_layout"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/toolbar"
+        android:background="@color/purple_200">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:elevation="2dp"
+                android:id="@+id/logout"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:src="@drawable/logout"></de.hdodenhof.circleimageview.CircleImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile_img"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:orientation="vertical"
+        android:id="@+id/li">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_name"
+                android:hint="enter name"
+                android:textColor="@color/purple_200"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginHorizontal="6dp"
+                android:src="@drawable/contact"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_mobile"
+                android:hint="edit mobile"
+                android:textSize="18dp"
+                android:textColor="@color/purple_200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/location"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="edit address"
+                android:id="@+id/edt_address"
+                android:textColor="@color/purple_200"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
